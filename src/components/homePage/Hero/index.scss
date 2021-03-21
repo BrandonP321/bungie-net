@@ -1,0 +1,77 @@
+.home-hero {
+    height: 682px;
+    box-sizing: border-box;
+    position: relative;
+
+    @media screen and (max-width: 770px) {
+        height: 495px;
+    }
+
+    .background-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+
+        video {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @media screen and (min-width: 770px) {
+                display: block;
+            }
+        }
+
+        .image {
+            display: none;
+            background-image: url("https://www.bungie.net/pubassets/pkgs/143/143741/bnet_beyond_light_bnet_launch_header_mobile.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: 100%;
+            width: 100%;
+
+            @media screen and (max-width: 769px) {
+                display: block;
+
+            }
+        }
+    }
+
+    .hero-content {
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translateY(-50%);
+        z-index: 2;
+        color: white;
+        width: 30%;
+
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            background-color: rgb(80, 80, 80);
+            margin: 27px 0 13px 0;
+        }
+
+        .title-img {
+            background-image: url(https://www.bungie.net/pubassets/pkgs/140/140424/logo_en.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            padding-top: 21%;
+        }
+    }
+}
