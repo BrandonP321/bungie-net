@@ -1,0 +1,16 @@
+.section-tab {
+    margin-bottom: 15px;
+
+    .line {
+        height: 1px;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .section-name {
+        background-color: white;
+        padding: .3rem .4rem;
+        width: fit-content;
+        font-weight: 700;
+    }
+}

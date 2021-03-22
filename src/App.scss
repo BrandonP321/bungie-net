@@ -1,5 +1,9 @@
-@mixin vw-greater-than-770() {
-    @media screen and (min-width: 770px) {
-        @content;
-    }
+body {
+    background-color: rgb(18, 23, 28);
+}
+
+.main-content {
+    width: 95%;
+    max-width: 1600px;
+    margin: 0 auto;
 }

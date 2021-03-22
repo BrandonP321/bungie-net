@@ -1,0 +1,89 @@
+.featured-section {
+    margin-bottom: 100vh;
+    margin-top: 30px;
+
+    .flex-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        .flex-item {
+            align-items: flex-end;
+            backdrop-filter: blur(2px);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            height: 416px;
+            padding: 2.3rem 1.9rem;
+            width: 100%;
+            position: relative;
+
+            @media screen and (max-width: 770px) {
+                height: 180px;
+            }
+            
+            &.large {
+                width: calc(50% - 10px);
+
+                @media screen and (max-width: 770px) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+            
+            &.small {
+                width: calc(25% - 10px);
+
+                @media screen and (max-width: 770px) {
+                    width: calc(50% - 10px);
+                }
+            }
+            
+            &.chosen-season {
+                background-image: url(https://www.bungie.net/pubassets/pkgs/148/148613/FrontpageBanner_01.jpg?cv=3983621215&av=1521438542);
+            }
+            
+            &.update {
+                background-image: url(https://www.bungie.net/pubassets/pkgs/149/149565/FrontpageBanner_01.jpg?cv=3983621215&av=1521438542);
+            }
+            
+            &.play-for-free {
+                background-image: url(https://www.bungie.net/pubassets/pkgs/146/146037/New-Light-F2P-Featured-Banner_1920x590.jpg?cv=3983621215&av=1521438542);
+            }
+            
+            .backdrop-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                // backdrop-filter: blur(.6px);
+                background: linear-gradient(to bottom, transparent, #00000045);
+                border-radius: 10px;
+            }
+            
+            .content {
+                max-width: 100%;
+                width: fit-content;
+                position: relative;
+                z-index: 2;
+                
+                p {
+                    color: white;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    margin: 0;
+                }
+                
+                .divider {
+                    background-color: #ffffff42;
+                    height: 2px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
