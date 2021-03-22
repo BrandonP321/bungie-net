@@ -1,0 +1,40 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    color: white;
+    height: 65px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    background-color: rgba(18, 23, 28, 0);
+    transition: background-color .5s, box-shadow .5s;
+
+    &.show-bg {
+        background-color: rgba(18, 23, 28, 1);
+        box-shadow: 0px 0px 7px black;
+    }
+
+    .header-content-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .flex-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .brand {
+                height: 100%;
+                width: 142px;
+                background-image: url(https://www.bungie.net/img/theme/bungienet/bungie_logo_with_shield.svg);
+                background-repeat: no-repeat;
+                background-position: 50%;
+                margin-right: 20px;
+            }
+        }
+    }
+}
