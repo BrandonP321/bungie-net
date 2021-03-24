@@ -35,6 +35,26 @@
                 background-position: 50%;
                 margin-right: 20px;
             }
+
+            .login-btn {
+                padding: .5rem;
+                box-sizing: border-box;
+                background-color: white;
+                border-top: 1px solid #d6d6d6
+            }
+
+            .sign-in-title {
+                background-color: white;
+                color: black;
+                border-bottom: 1px solid #d6d6d6;
+                padding: .9rem 0;
+                font-size: .8rem;
+                font-weight: bold;
+
+                &:hover {
+                    cursor: auto;
+                }
+            }
         }
     }
 }

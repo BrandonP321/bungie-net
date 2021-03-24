@@ -1,14 +1,17 @@
 import React, { ReactElement } from 'react'
+import HeaderPopUp from '../HeaderPopUp'
 import './index.scss'
 
 interface Props {
-    children: string;
+    children: any;
+    title: string;
 }
 
-export default function HeaderNavLink({ children }: Props): ReactElement {
+export default function HeaderNavLink({ children, title }: Props): ReactElement {
     return (
         <a className='nav-link' href='/'>
-            <p>{children}</p>
+            <p>{title}</p>
+            {children}
         </a>
     )
 }
